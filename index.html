@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fletes Tres Reinas</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Fletes Tres Reinas</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <!-- HERO -->
+        <section id="hero">
+            <h1>Fletes Tres Reinas</h1>
+            <p>Mudanzas-Mini Fletes-Motomensajería</p>
+            <p>Trabajamos de lunes a sábados</p>
+            <a href="#contacto" class="boton">Pedi tu presupuesto</a>
+        </section>
+
+
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="contenedor-servicios">
+                <article>
+                    <h3>Mudanzas</h3>
+                    <p>Trasladamos tus muebles y pertenencias con cuidado</p>
+                </article>
+                <article>
+                    <h3>Mini Fletes</h3>
+                    <p>Para cargas pequeñas y medianas</p>
+                </article>
+                <article>
+                    <h3>Envíos y entrega de mercadería</h3>
+                    <p>Entregamos donde necesites</p>
+
+
+                </article>
+                <article>
+                    <h3>Motomensajería</h3>
+                    <p>Envíos rápidos </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="contenedor-galeria">
+                <img src="images/camion" alt="Fletes Tres Reinas">
+                <img src="images/camion" alt="Fletes Tres Reinas">
+                <img src="images/camion" alt="Fletes Tres Reinas">
+                <img src="images/camion" alt="Fletes Tres Reinas">
+                <img src="images/camion" alt="Fletes Tres Reinas">
+                <img src="images/camion" alt="Fletes Tres Reinas">
+            </div>
+        </section>
+
+        <!-- COMENTARIOS -->
+        <section id="comentarios">
+            <h2>Nuestros Clientes dicen:</h2>
+            <div class="contenedor-comentarios">
+                <article>
+                    <p>"Excelente servicio, muy puntuales y cuidadosos"</p>
+                    <span>— María García</span>
+                </article>
+                <article>
+                    <p>"Muy recomendables, mudaron todo sin ningún problema"</p>
+                    <span>— Juan López</span>
+                </article>
+                <article>
+                    <p>"Rápidos y profesionales, los volvería a contratar"</p>
+                    <span>— Carolina Pérez</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Pedí tu presupuesto</h2>
+            <form class="formulario" action="https://formspree.io/f/xgodjkow" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="mail">Mail</label>
+                <input type="email" id="mail" name="mail" required>
+
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" required>
+
+                <label for="desde">Desde Barrio</label>
+                <input type="text" id="desde" name="desde" required>
+
+                <label for="hasta">Hasta Barrio</label>
+                <input type="text" id="hasta" name="hasta" required>
+
+
+                <label for="opciones">Elegí el servicio que necesitas</label>
+                <select id="opciones" name="opciones" required>
+                    <option value="mudanza">Mudanza</option>
+                    <option value="flete">Flete</option>
+                    <option value="traslado">Traslado</option>
+                    <option value="motomensajia">Motomensajería</option>
+                </select>
+                <label for="detalles">Contanos que tenes que trasladar</label>
+                <textarea id="detalles" name="detalles" rows="10" required></textarea>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Fletes Tres Reinas — Todos los derechos reservados</p>
+    </footer>
+
+
+</body>
+
+</html>
