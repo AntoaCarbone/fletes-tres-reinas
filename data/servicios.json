@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Mini Flete",
+    "descripcion": "Ideal para pocos muebles o electrodomésticos sueltos",
+    "imagen": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&h=300&fit=crop",
+    "precio": 8500
+  },
+  {
+    "id": 2,
+    "titulo": "Mudanza Chica",
+    "descripcion": "Departamento de 1 ambiente, hasta 2 horas de trabajo",
+    "imagen": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop",
+    "precio": 15000
+  },
+  {
+    "id": 3,
+    "titulo": "Mudanza Completa",
+    "descripcion": "Casa o departamento grande, incluye embalaje básico",
+    "imagen": "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=400&h=300&fit=crop",
+    "precio": 28000
+  },
+  {
+    "id": 4,
+    "titulo": "Motomensajería Express",
+    "descripcion": "Entrega de documentos o paquetes chicos en el día",
+    "imagen": "https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?w=400&h=300&fit=crop",
+    "precio": 3500
+  }
+]

@@ -18,15 +18,44 @@
 
     <header>
         <div class="logo">Fletes Tres Reinas</div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
-            <ul class="menu">
+            <ul class="menu" id="menu-principal">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#galeria">Galería</a></li>
+                <li><a href="#planes">Planes y Tarifas</a></li>
                 <li><a href="#comentarios">Comentarios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <button id="carrito-toggle" class="carrito-toggle" aria-label="Ver carrito">
+            🛒 <span id="carrito-contador" class="carrito-contador">0</span>
+        </button>
     </header>
+
+    <!-- CARRITO -->
+    <div id="carrito-overlay" class="carrito-overlay"></div>
+    <aside id="carrito-panel" class="carrito-panel" aria-hidden="true">
+        <div class="carrito-header">
+            <h2>Tu carrito</h2>
+            <button id="carrito-cerrar" class="carrito-cerrar" aria-label="Cerrar carrito">&times;</button>
+        </div>
+        <div id="carrito-items" class="carrito-items">
+            <p class="carrito-vacio">Todavía no agregaste ningún plan.</p>
+        </div>
+        <div class="carrito-footer">
+            <div class="carrito-total">
+                <span>Total</span>
+                <span id="carrito-total-monto">$0</span>
+            </div>
+            <button id="carrito-vaciar" class="boton boton-secundario">Vaciar carrito</button>
+            <a href="#contacto" id="carrito-pedir" class="boton">Pedir presupuesto</a>
+        </div>
+    </aside>
     <main>
         
         <!-- HERO -->
@@ -68,12 +97,18 @@
         <section id="galeria">
             <h2>Galería</h2>
             <div class="contenedor-galeria">
-                <img src="images/camion" alt="Fletes Tres Reinas">
-                <img src="images/camion" alt="Fletes Tres Reinas">
-                <img src="images/camion" alt="Fletes Tres Reinas">
-                <img src="images/camion" alt="Fletes Tres Reinas">
-                <img src="images/camion" alt="Fletes Tres Reinas">
-                <img src="images/camion" alt="Fletes Tres Reinas">
+                <img src="images/camion1.jpg" alt="Camión de Fletes Tres Reinas listo para trabajar">
+                <img src="images/camion2.jpg" alt="Mudanza realizada por Fletes Tres Reinas">
+                <img src="images/camion3.jpg" alt="Equipo de Fletes Tres Reinas cargando mercadería">
+            </div>
+        </section>
+
+        <!-- PLANES Y TARIFAS (cargado dinámicamente con fetch) -->
+        <section id="planes">
+            <h2>Planes y Tarifas</h2>
+            <p class="planes-intro">Precios de referencia según el tipo de traslado que necesites</p>
+            <div class="contenedor-tarjetas" id="contenedor-tarjetas">
+                <p class="cargando">Cargando planes...</p>
             </div>
         </section>
 
@@ -99,7 +134,9 @@
         <!-- CONTACTO -->
         <section id="contacto">
             <h2>Pedí tu presupuesto</h2>
-            <form class="formulario" action="https://formspree.io/f/xgodjkow" method="post">
+            <form class="formulario" action="https://formspree.io/f/xgodjkow" method="post" id="form-contacto" novalidate>
+                <div id="form-mensaje" class="form-mensaje" aria-live="polite"></div>
+
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -138,7 +175,7 @@
         <p>© 2025 Fletes Tres Reinas — Todos los derechos reservados</p>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
